@@ -13,7 +13,7 @@ The data and network, network $f(\theta)$. as mentioned in the paper, is from [S
 We acknowledge and thank the authors of these works for sharing their code.
 
 ## Setup
-- Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1.
+- Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1. Please notw that some changes were needed to get SYSML pl-lightning code to run on the current version.
 - `pip install -q munkres` is needed for the hungarian algorithem, for the evaluation metrics
 - The code also run on Google colab (2022 April) with no modifications, with munkres installed.
 
