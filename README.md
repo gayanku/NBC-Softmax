@@ -10,7 +10,7 @@ The paper discribes the loss function NBC-Softmax. This needs to be used with a 
 In this repo we only show the NBC-Softmax code. Portions of the contrastive learning code is from [PAMC](https://github.com/gayanku/PAMC). 
 The data and network, network $f(\theta)$. as mentioned in the paper, is from [SYSML](https://github.com/pranavmaneriker/sysml) contains the datsets,  pretrained graph cpntext embeddings and the deep learning.  
 
-We acknowledge and thank the authors of these works for sharing their code.
+We acknowledge and thank the authors of these works for sharing their code and data.
 
 ## Setup
 - Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1. Please notw that some changes were needed to get SYSML pl-lightning code to run on the current version.
