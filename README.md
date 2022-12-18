@@ -1,20 +1,24 @@
 # NBC-Softmax :  Darkweb Author fingerprinting and migration tracking
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the PyTorch implementation of "NBC-Softmax", an auxilary block contrastive loss which only uses the negative samples, to improve traditional softmax. This has achived state of the art in author style detection. This is the official implemenation for the results and work discribed in our paper [NBC-Softmax](link)
+This repository contains the PyTorch implementation of "NBC-Softmax", an auxiliary block contrastive loss which only uses the negative samples, to improve traditional softmax. This has achieved state of the art in author style detection. This is the official implementation for the results and work described in our paper [NBC-Softmax](link)
 
 TLDR; A simple negative block contrastive loss addition for softmax.
 
 
-The paper discribes the loss function NBC-Softmax. This needs to be used with a dataset and network for deep metric learning. 
+The paper describes the loss function NBC-Softmax. This needs to be used with a dataset and network for deep metric learning. 
 In this repo we only show the NBC-Softmax code. Portions of the contrastive learning code is from [PAMC](https://github.com/gayanku/PAMC). 
-The data and network, network $f(\theta)$. as mentioned in the paper, is from [SYSML](https://github.com/pranavmaneriker/sysml) contains the datsets,  pretrained graph cpntext embeddings and the deep learning.  
+The data and network, network $f(\theta)$. as mentioned in the paper, is from [SYSML](https://github.com/pranavmaneriker/sysml) contains the datsets,  pretrained graph context embeddings and the deep learning.  NBCSAuthor is the dark web author fingerprinting model implementation that uses NBC-softmax loss under the hood.
 
 We acknowledge and thank the authors of these works for sharing their code and data.
 
 ![NBC-softmax theory](https://github.com/gayanku/NBC-Softmax/blob/main/theory.png?raw=true)
 
 Above figure shows the comparison between the traditional softmax loss (left) with NBC-softmax ( on the right). We use similarity of different classes, represented and managed by $\hat{\mu}$ to force apart the weight vectors $W$, instead of imposing any soft or hard margins.
+
+## Results
+![Results](https://github.com/gayanku/NBC-Softmax/blob/main/Results_NBC-softmax.png?raw=true)
+
 
 
 ## Setup
@@ -41,4 +45,3 @@ MultiDatasetModel
   year={2022}
 }
 ```
-
