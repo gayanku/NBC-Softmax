@@ -12,6 +12,11 @@ The data and network, network $f(\theta)$. as mentioned in the paper, is from [S
 
 We acknowledge and thank the authors of these works for sharing their code and data.
 
+![NBC-softmax theory](https://github.com/gayanku/NBC-Softmax/blob/main/theory.png?raw=true)
+
+Above figure shows the comparison between the traditional softmax loss (left) with NBC-softmax ( on the right). We use similarity of different classes, represented and managed by $\hat{\mu}$ to force apart the weight vectors $W$, instead of imposing any soft or hard margins.
+
+
 ## Setup
 - Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1. Please note that some, minimal, changes were needed to get SYSML pl-lightning code to run on the current version.
 
