@@ -34,7 +34,7 @@ MultiDatasetModel
 
 ## Citation
 ```
-@article{kulatilleke2022efficient,
+@article{kulatilleke2022__________________________________________________________,
   title={Efficient block contrastive learning via parameter-free meta-node approximation}, 
   author={Kulatilleke, Gayan K and Portmann, Marius and Chandra, Shekhar S},
   journal={arXiv preprint arXiv:2209.14067},
