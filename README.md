@@ -13,7 +13,7 @@ The data and network, network $f(\theta)$. as mentioned in the paper, is from [S
 We acknowledge and thank the authors of these works for sharing their code and data.
 
 ## Setup
-- Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1. Please notw that some changes were needed to get SYSML pl-lightning code to run on the current version.
+- Our code was tested on CUDA 11.3.0, python 3.6.9, pytorch 1.3.1. Please note that some, minimal, changes were needed to get SYSML pl-lightning code to run on the current version.
 
 ## Usage
 - All parameters are defined in SYSML. additionally we use the following to define the NBS-softmax hyperparameters for --model_params_classwise
