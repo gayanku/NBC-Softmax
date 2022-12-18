@@ -29,7 +29,8 @@ class ProjContrastiveModel_BC1(Module):
     def loss_calculation(self, z,c, num_classes, tau):
         #compute cluster centers CC
         ONEHOT = F.one_hot(c, num_classes=num_classes)  # N*num_classes
-        CC = torch.sum(z.unsqueeze(1) * ONEHOT.unsqueeze(2) , dim=0) / torch.clamp( ONEHOT.sum(0).unsqueeze(-1), min=1.0)   # Z(N,FE)->(N,1,FE) * ONEHOT(N,num_classes)->(N,num_classes,1) ==> (N, num_classes, FE) / (num_classes,1) ==>sum(0) ==> num_classes*FE
+        CC = torch.sum(z.unsqueeze(1) * ONEHOT.unsqueeze(2) , dim=0) / torch.clamp( ONEHOT.sum(0).unsqueeze(-1), min=1.0)   
+        # Z(N,FE)->(N,1,FE) * ONEHOT(N,num_classes)->(N,num_classes,1) ==> (N, num_classes, FE) / (num_classes,1) ==>sum(0) ==> num_classes*FE
 
         CC_VALID = CC[ ONEHOT.sum(0) > 0 ]
         negative_distances = self.get_feature_dis(CC_VALID)
