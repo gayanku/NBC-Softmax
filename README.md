@@ -38,10 +38,10 @@ MultiDatasetModel
 
 ## Citation
 ```
-@article{kulatilleke2022__________________________________________________________,
-  title={Efficient block contrastive learning via parameter-free meta-node approximation}, 
-  author={Kulatilleke, Gayan K and Portmann, Marius and Chandra, Shekhar S},
-  journal={arXiv preprint arXiv:2209.14067},
+@article{kulatilleke2022nbcsoftmax,
+  title={NBC-Softmax : Darkweb Author fingerprinting and migration tracking}, 
+  author={Kulatilleke, Gayan K and Chandra, Shekhar S and Portmann, Marius },
+  journal={arXiv preprint arXiv:2212.08184},
   year={2022}
 }
 ```
