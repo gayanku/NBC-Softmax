@@ -1,7 +1,7 @@
 # NBC-Softmax :  Darkweb Author fingerprinting and migration tracking
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the PyTorch implementation of "NBC-Softmax", an auxiliary block contrastive loss which only uses the negative samples, to improve traditional softmax. This has achieved state of the art in author style detection. This is the official implementation for the results and work described in our paper [NBC-Softmax](link)
+This repository contains the PyTorch implementation of "NBC-Softmax", an auxiliary block contrastive loss which only uses the negative samples, to improve traditional softmax. This has achieved state of the art in author style detection. This is the official implementation for the results and work described in our paper [NBC-Softmax](https://arxiv.org/abs/2212.08184)
 
 TLDR; A simple negative block contrastive loss addition for softmax.
 
